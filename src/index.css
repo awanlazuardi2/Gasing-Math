@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Outfit", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-handwriting: "Caveat", cursive;
+
+  /* Playful Candy Color Palette */
+  /* 1. Soft Pinks (Cotton Candy / Strawberry) */
+  --color-candy-pink: #ff5c8d;
+  --color-candy-pink-hover: #f0487b;
+  --color-candy-pink-light: #ff85ab;
+  --color-candy-pink-pastel: #fff0f5;
+  --color-candy-pink-border: #fca5c3;
+
+  /* 2. Sunny Yellows (Lemon Drop / Honey) */
+  --color-candy-yellow: #ffb703;
+  --color-candy-yellow-hover: #e09f00;
+  --color-candy-yellow-light: #ffd166;
+  --color-candy-yellow-pastel: #fff9e6;
+  --color-candy-yellow-border: #fde047;
+
+  /* 3. Mint Greens (Peppermint / Sweet Mint) */
+  --color-candy-mint: #06d6a0;
+  --color-candy-mint-hover: #05be8e;
+  --color-candy-mint-light: #3ddc97;
+  --color-candy-mint-pastel: #eafaf4;
+  --color-candy-mint-border: #86efac;
+
+  /* 4. Sky Blues (Blueberry Bubble / Cloud Sky) */
+  --color-candy-sky: #0ea5e9;
+  --color-candy-sky-hover: #0284c7;
+  --color-candy-sky-light: #38bdf8;
+  --color-candy-sky-pastel: #eaf6ff;
+  --color-candy-sky-border: #93c5fd;
+
+  /* 5. Candy Lavender / Purple (Grape Fizz) */
+  --color-candy-purple: #8b5cf6;
+  --color-candy-purple-hover: #7c3aed;
+  --color-candy-purple-light: #a78bfa;
+  --color-candy-purple-pastel: #f5f3ff;
+  --color-candy-purple-border: #c4b5fd;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-display, .font-fun {
+  font-family: var(--font-display);
+}
+
+/* Playful Bubbly Candy Helpers */
+.bubbly-card {
+  border-radius: 1.75rem; /* 28px */
+  border-width: 2px;
+  box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bubbly-btn {
+  border-radius: 1rem;
+  border-bottom-width: 3px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  transition: all 0.15s ease;
+}
+.bubbly-btn:active {
+  border-bottom-width: 1px;
+  transform: translateY(2px);
+}
+
+/* Joyful Candy Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bae6fd;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7dd3fc;
+}
+
+/* Custom background styles for paper preview sheet */
+#paper-print-sheet {
+  font-family: var(--font-sans);
+}
+
+/* Print optimizations */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+}
+

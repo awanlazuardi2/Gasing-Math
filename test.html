@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="container" style="position: relative;">
+    <div id="b1" style="height: 50px;"></div>
+    <div id="b2" style="height: 50px;"></div>
+  </div>
+  <script>
+    const c = document.getElementById('container');
+    const b2 = document.getElementById('b2');
+    console.log(b2.getBoundingClientRect().top - c.getBoundingClientRect().top);
+    const s = document.createElement('div');
+    s.style.height = '100px';
+    c.insertBefore(s, b2);
+    console.log(b2.getBoundingClientRect().top - c.getBoundingClientRect().top);
+  </script>
+</body>
+</html>

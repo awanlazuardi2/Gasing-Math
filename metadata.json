@@ -1,0 +1,6 @@
+{
+  "name": "Generator Worksheet GASING",
+  "description": "Generator lembar kerja matematika interaktif berbasis metode GASING (Gampang, ASyIk, menyenaNGkan) karya Prof. Yohanes Surya untuk SD/MI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
